@@ -1,0 +1,29 @@
+# ============================================================
+#  SaaS Opportunity Hunter Bot — requirements.txt
+#  Python 3.11+
+# ============================================================
+
+# --- HTTP & Scraping ---
+httpx>=0.27.0
+requests>=2.32.0
+beautifulsoup4>=4.12.3
+lxml>=5.2.2                  # fast BS4 parser backend
+selectolax>=0.3.21           # alternative lightweight parser
+
+# --- LLM Providers ---
+anthropic>=0.28.0
+openai>=1.35.0
+
+# --- Orchestration & Logging ---
+loguru>=0.7.2
+tenacity>=8.5.0
+click>=8.1.7                 # CLI argument parsing
+
+# --- Storage ---
+supabase>=2.4.6              # Supabase client (optional vector layer)
+vecs>=0.4.3                  # pgvector wrapper (optional)
+pyairtable>=2.3.3            # Airtable SDK (optional)
+
+# --- Utilities ---
+python-dotenv>=1.0.1         # Load .env files for API key management
+pydantic>=2.7.4              # Data validation (optional but recommended)
